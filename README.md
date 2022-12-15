@@ -19,15 +19,15 @@ Create a simple calendar application that allows users to save events for each h
 ---
 By clicking on the following link, you can easily view and test this web-based app for evaluation 🔗.
 
+![link](https://bryan3d.github.io/Work-Day-Scheduler/)
+
 
 ## Team Profile Generator Demo Image
-
 ---
 ![Alt text](img/2022-12-15%2015_44_28-Work%20Day%20Scheduler.png)
 
 
 ## Inquire
-
 ---
 Feel free to contact me at bryanq2008@live.com with any questions about this project. Visit <https://github.com/Bryan3D> to see more of my projects.
 
