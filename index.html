@@ -164,10 +164,69 @@
         </div>
       </div>
     <hr>
+<div>
+<!-- HTML code for input fields and button -->
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit" id="submitBtn">Send</button>
+</form>
+</div>
   
   </div>  
+ <!--  JavaScript code to handle form submission, save data to application, and send email -->
+<script>
+  document.getElementById("saveBtn").addEventListener("click", function (event) {
+    event.preventDefault(); // prevent default form submission behavior
+
+    // get form data
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // save data to application
+    var data = {
+      name: name,
+      email: email,
+      message: message
+    };
+    saveData(data);
+
+    // construct email body
+    var body = "Name: " + name + "%0D%0A" +
+      "Email: " + email + "%0D%0A" +
+      "Message: " + message;
+
+    // open email client with pre-populated email fields
+    window.location.href = "mailto:bryanq2008@live.com?subject=New Message&body=" + body;
+  });
+
+  // function to save data to application
+  function saveData(data) {
+    // send data to server using AJAX or fetch API
+    // for example:
+    fetch('/api/save-data', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(function (response) {
+      console.log(response);
+    }).catch(function (error) {
+      console.error(error);
+    });
+  }
+</script>
  
+  </script>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

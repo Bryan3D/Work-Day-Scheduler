@@ -92,7 +92,23 @@ function setBackground() {
   });
 }
 
+// 
+document.getElementById("submitBtn").addEventListener("click", function (event) {
+  event.preventDefault(); // prevent default form submission behavior
 
+  // get form data
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // construct email body
+  var body = "Name: " + name + "%0D%0A" +
+    "Email: " + email + "%0D%0A" +
+    "Message: " + message;
+
+  // open email client with pre-populated email fields
+  window.location.href = "mailto:recipient@example.com?subject=New Message&body=" + body;
+});
 
 
 $(document).ready(function(){
