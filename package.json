@@ -1,0 +1,19 @@
+{
+  "name": "work-day-scheduler",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryan3D/Work-Day-Scheduler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryan3D/Work-Day-Scheduler/issues"
+  },
+  "homepage": "https://github.com/Bryan3D/Work-Day-Scheduler#readme"
+}
