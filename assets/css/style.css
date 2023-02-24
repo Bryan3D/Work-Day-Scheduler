@@ -100,3 +100,33 @@ display:flex;
 flex-direction: column;
   
 }
+
+.btn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #22ddf2;
+  color: white;
+  width: 120px;
+  font-size: 20px;
+}
+
+.btn {
+  border: 1px;
+  margin: top 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.parent {
+  display: grid;
+  /* grid-template-columns: 1fr;  */
+  grid-template-rows: repeat(1, 1fr);
+  /* grid-column-gap: 0px; */
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  /* grid-area: 5 / 1 / 6 / 6; */
+}

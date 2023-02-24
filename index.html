@@ -163,19 +163,28 @@
           </svg></button>
         </div>
       </div>
-      
-<div class=" rBtn">
     <hr>
-    <br>
-    <button type="button" class="btn btn-warning" id="resetBtn">Reset!</button>
-</div>
 
-    </div>
-    
   
+  </div>  
+ 
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>const previewElem = document.getElementById("preview");
+      const startBtn = document.getElementById("start");
+
+      async function startRecording() {
+        previewElem.srcObject =
+          await navigator.mediaDevices.getDisplayMedia({
+            video: true,
+            audio: true,
+          });
+      }
+
+      startBtn.addEventListener("click", startRecording);</script>
   </body>
   <br>
   <footer class="footer">
